@@ -25,7 +25,7 @@ components:
     type: Label
     layout_properties: {grid_position: 'QHTCLW,KWRQCZ'}
   - name: text_box_email
-    properties: {}
+    properties: {type: email}
     type: TextBox
     layout_properties: {grid_position: 'QHTCLW,VWBZUD'}
   - name: label_4
@@ -33,7 +33,7 @@ components:
     type: Label
     layout_properties: {grid_position: 'OZSBLR,IIDRKC'}
   - name: text_box_phonenumber
-    properties: {}
+    properties: {type: number}
     type: TextBox
     layout_properties: {grid_position: 'OZSBLR,GHWLXG'}
   - name: label_5
