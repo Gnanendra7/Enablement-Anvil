@@ -13,7 +13,7 @@ components:
     type: Label
     layout_properties: {grid_position: 'GMGKDG,IMBNPY'}
   - name: label_2
-    properties: {text: 'Name:'}
+    properties: {text: 'Name:', align: center}
     type: Label
     layout_properties: {grid_position: 'SDODQZ,DRPIBZ'}
   - name: text_box_name
@@ -21,7 +21,7 @@ components:
     type: TextBox
     layout_properties: {grid_position: 'SDODQZ,IODMHO'}
   - name: label_3
-    properties: {text: 'Email:'}
+    properties: {text: 'Email:', align: center}
     type: Label
     layout_properties: {grid_position: 'QHTCLW,KWRQCZ'}
   - name: text_box_email
@@ -29,7 +29,7 @@ components:
     type: TextBox
     layout_properties: {grid_position: 'QHTCLW,VWBZUD'}
   - name: label_4
-    properties: {text: 'Phone Number:'}
+    properties: {text: 'Phone Number:', align: center}
     type: Label
     layout_properties: {grid_position: 'OZSBLR,IIDRKC'}
   - name: text_box_phonenumber
@@ -37,7 +37,7 @@ components:
     type: TextBox
     layout_properties: {grid_position: 'OZSBLR,GHWLXG'}
   - name: label_5
-    properties: {text: 'Password:'}
+    properties: {text: 'Password:', align: center}
     type: Label
     layout_properties: {grid_position: 'BMRSWC,VNTLWB'}
   - name: text_box_password
@@ -45,13 +45,17 @@ components:
     type: TextBox
     layout_properties: {grid_position: 'BMRSWC,JSENBA'}
   - name: label_6
-    properties: {text: 'Reenter Password:'}
+    properties: {text: 'Reenter Password:', align: center}
     type: Label
     layout_properties: {grid_position: 'MVKULJ,XSYZZL'}
   - name: text_box_reenterpassword
     properties: {}
     type: TextBox
     layout_properties: {grid_position: 'MVKULJ,FKTLMQ'}
+  - name: button_1
+    properties: {text: ADD EMPLOYEE, role: primary-color}
+    type: Button
+    layout_properties: {grid_position: 'YMHAOY,CDTPIV'}
 - type: FlowPanel
   properties: {}
   name: navbar_links

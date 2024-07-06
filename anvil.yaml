@@ -7,7 +7,7 @@ services:
 - source: /runtime/services/tables.yml
   client_config: {}
   server_config: {}
-startup: {type: form, module: Admin}
+startup: {type: form, module: Admin.ManageUsers.ManageEmployee.addemployee}
 db_schema:
   users:
     client: none
