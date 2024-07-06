@@ -12,7 +12,8 @@ unique_ids:
     Admin.ManageUsers.ManageAdmin.editadmin: '1720155177033823830565921.5624'
     Admin: QLMLQVDHMWBVWY6WYDK5VAINCLUKSLWC
   modules: {}
-  server_modules: {}
+  server_modules:
+    ServerModule1: '1720271685021969553853806.9565'
   assets:
     Photo_prasad.jpeg: '1720172447538745202500129.3751'
     businessman_edit.png: '1720173384809348962129889.4161'
