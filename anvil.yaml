@@ -9,11 +9,23 @@ services:
   server_config: {}
 startup: {type: form, module: Admin.ManageUsers.ManageEmployee}
 db_schema:
-  users:
-    client: none
+  addemployee:
+    title: addemployee
+    client: full
     server: full
     columns:
     - name: Name
-      admin_ui: {width: 200, order: 0}
+      admin_ui: {width: 200}
       type: string
-    title: users
+    - name: Email
+      admin_ui: {width: 200}
+      type: string
+    - name: phone
+      admin_ui: {width: 200}
+      type: number
+    - name: Password
+      admin_ui: {width: 200}
+      type: string
+    - name: repassword
+      admin_ui: {width: 200}
+      type: string
