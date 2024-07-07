@@ -14,4 +14,7 @@ import anvil.server
 # def say_hello(name):
 #   print("Hello, " + name + "!")
 #   return 42
-#
+
+@anvil.server.callable
+def submit(name,email,phone,password,repassword):
+  app_tables.addemployee.add_row(Name=name,Email=email,phone=phone,Password=password,repassword=repassword)

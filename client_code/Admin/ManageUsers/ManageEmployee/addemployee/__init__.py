@@ -15,3 +15,13 @@ class addemployee(addemployeeTemplate):
 
   def link_1_click(self, **event_args):
     open_form('Admin.ManageUsers.ManageEmployee')
+
+  def button_1_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    name=self.text_box_name.text
+    email=self.text_box_email.text
+    phone=int(self.text_box_phonenumber.text)
+    password = self.text_box_password.text
+    repassword = self.text_box_reenterpassword.text
+    anvil.server.call('submit',name=name,email=email,phone=phone,password=password,repassword=repassword)
+    Notification("Your employee details has been saved!!!").show()

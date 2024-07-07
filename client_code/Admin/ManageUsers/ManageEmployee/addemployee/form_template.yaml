@@ -53,9 +53,10 @@ components:
     type: TextBox
     layout_properties: {grid_position: 'MVKULJ,FKTLMQ'}
   - name: button_1
-    properties: {text: ADD EMPLOYEE, role: primary-color}
+    properties: {text: SUBMIT, role: primary-color}
     type: Button
     layout_properties: {grid_position: 'YMHAOY,CDTPIV'}
+    event_bindings: {click: button_1_click}
 - type: FlowPanel
   properties: {}
   name: navbar_links
