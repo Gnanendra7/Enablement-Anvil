@@ -4,7 +4,7 @@ name: Finchain Enablement
 startup_form: null
 runtime_options:
   version: 2
-  client_version: '2'
+  client_version: '3'
   server_version: python3-full
   server_spec: {base: python310-minimal}
 services:
@@ -18,17 +18,17 @@ db_schema:
     client: full
     server: full
     columns:
-    - name: Name
-      admin_ui: {width: 200}
+    - name: name
+      admin_ui: {order: 0, width: 200}
       type: string
-    - name: Email
-      admin_ui: {width: 200}
+    - name: email
+      admin_ui: {order: 1, width: 200}
       type: string
     - name: phone
       admin_ui: {width: 200}
       type: number
-    - name: Password
-      admin_ui: {width: 200}
+    - name: password
+      admin_ui: {order: 3, width: 200}
       type: string
     - name: repassword
       admin_ui: {width: 200}
