@@ -36,6 +36,10 @@ class addemployee(addemployeeTemplate):
     elif password != repassword:
       Notification("Passwords do not match").show()
       return
+      
+    elif len(str(phone)) != 10:  # Check for phone number length
+      Notification("Phone number must be exactly 10 digits").show()
+      return
 
     try:
       phone_int = int(phone)  # Convert phone to int after validation
