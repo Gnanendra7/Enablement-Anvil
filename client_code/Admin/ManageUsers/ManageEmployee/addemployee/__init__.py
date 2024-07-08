@@ -17,7 +17,6 @@ class addemployee(addemployeeTemplate):
     open_form('Admin.ManageUsers.ManageEmployee')
 
   def button_1_click(self, **event_args):
-    """This method is called when the button is clicked"""
     name=self.text_box_name.text
     email=self.text_box_email.text
     phone=int(self.text_box_phonenumber.text)
