@@ -19,8 +19,34 @@ class addemployee(addemployeeTemplate):
   def button_1_click(self, **event_args):
     name=self.text_box_name.text
     email=self.text_box_email.text
-    phone=int(self.text_box_phonenumber.text)
+    phone=self.text_box_phonenumber.text
     password = self.text_box_password.text
     repassword = self.text_box_reenterpassword.text
-    anvil.server.call('submit',name=name,email=email,phone=phone,password=password,repassword=repassword)
-    Notification("Your employee details has been saved!!!").show()
+    
+    
+# Input validation
+    if not (name and email and phone and password and repassword):
+      Notification("Please fill all the fields").show()
+      return
+
+    # elif phone.isdigit():
+    #   Notification("Phone number must be numeric").show()
+    #   return
+
+    elif password != repassword:
+      Notification("Passwords do not match").show()
+      return
+
+    try:
+      phone_int = int(phone)  # Convert phone to int after validation
+    except ValueError:
+      Notification("Invalid phone number format").show()
+      return
+
+    # Server call from servermodule1_addemployee
+    try:
+      anvil.server.call('submit', name=name, email=email, phone=phone_int, password=password, repassword=repassword)
+      Notification("Your employee details have been saved!!!").show()
+    except Exception as e:
+      Notification("An error occurred:",e).show()
+
