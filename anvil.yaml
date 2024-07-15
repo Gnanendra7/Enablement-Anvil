@@ -42,4 +42,4 @@ startup: {type: form, module: Admin.ManageUsers.ManageEmployee}
 secrets:
   secret_key:
     type: secret
-    value: {FE6WHWCUT25MOFOM: ''}
+    value: {RXVHQMGOLWYCXM2W: ''}
