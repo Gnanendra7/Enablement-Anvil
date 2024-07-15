@@ -38,3 +38,8 @@ db_schema:
     - name: user_type
       admin_ui: {width: 200}
       type: string
+startup: {type: form, module: Admin.ManageUsers.ManageEmployee}
+secrets:
+  secret_key:
+    type: secret
+    value: {FE6WHWCUT25MOFOM: ''}
