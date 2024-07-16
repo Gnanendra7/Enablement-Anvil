@@ -41,5 +41,5 @@ db_schema:
 startup: {type: form, module: Admin.ManageUsers.ManageEmployee}
 secrets:
   secret_key:
-    type: secret
-    value: {RXVHQMGOLWYCXM2W: ''}
+    type: key
+    value: {RXVHQMGOLWYCXM2W: b4bynQD5S4ELcswegKCbaSYp3q0lEO8frkF3aT7CmvKth6lB7QROwEAWd0JFWMSK3lJeLpRyJo0vU09iyi/xZkAqN3brBZpB44I9G/9edTGNA+cKMs0DqR6ognh53sySYu7WrXzRW4IqCXdQv50uCgBiXAy3u98=}
